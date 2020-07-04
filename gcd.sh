@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [ $# -ne 2 ]; then
-	echo "input 2 arguments" 1>&2
+	echo "input 2 arguments"
 	exit 1
 fi
 expr $1 + $2 > /dev/null 2>&1
 if [ $? -ge 2 ]; then
-	echo "input natural number" 1>&2
+	echo "input natural number"
 	exit 1
 fi
 
